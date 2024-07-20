@@ -9,5 +9,5 @@ export const updateOne = (id, payload) => {
   return instance.patch(APIs.ACTIVITIES + `/${id}`, payload);
 };
 export const getAll = () => {
-  return instance.patch(APIs.ACTIVITIES + "/get-all");
+  return instance.get(APIs.ACTIVITIES + "/get-all");
 };
